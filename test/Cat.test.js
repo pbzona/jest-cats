@@ -63,9 +63,11 @@ describe('Lick', () => {
   });
 });
 
-describe('GetLocation', () => {
-  test("getLocation should describe cat's location", () => {
-    expect(testCat.getLocation()).toEqual("A's Location: 1,1");
+describe('PrintLocation', () => {
+  test("printLocation should console.log cat's location", () => {
+    console.log = jest.fn();
+    testCat.printLocation();
+    expect(console.log).toHaveBeenCalledWith("A's Location: 1,1");
   });
 });
 

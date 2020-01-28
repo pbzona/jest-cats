@@ -11,8 +11,8 @@ const littleCat = new Cat('Violet', 'gray', 0, 3);
   );
   await sleep(3000);
 
-  console.log(bigCat.getLocation());
-  console.log(littleCat.getLocation());
+  console.log(bigCat.printLocation());
+  console.log(littleCat.printLocation());
 
   await sleep(3000);
 
@@ -23,7 +23,7 @@ const littleCat = new Cat('Violet', 'gray', 0, 3);
   littleCat.move('up');
   littleCat.move('right');
 
-  console.log(littleCat.getLocation());
+  console.log(littleCat.printLocation());
 
   await sleep(3000);
 
@@ -39,5 +39,5 @@ const littleCat = new Cat('Violet', 'gray', 0, 3);
   bigCat.move('left');
 
   await sleep(3000);
-  console.log(bigCat.getLocation());
+  console.log(bigCat.printLocation());
 })();

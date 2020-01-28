@@ -27,8 +27,8 @@ class Cat {
     return `${this.name} licked ${target.name}`;
   }
 
-  getLocation() {
-    return `${this.name}'s Location: ${this.location}`;
+  printLocation() {
+    return console.log(`${this.name}'s Location: ${this.location}`);
   }
 
   move(direction) {
